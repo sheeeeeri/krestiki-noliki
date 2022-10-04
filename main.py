@@ -29,7 +29,7 @@ def take_input(player_token): # Принятие входных данных
         break
 
 
-def check_win(): 
+def check_win(): # Проверка на выигрыш
     for each in wins_coord:
         if (board[each[0]-1]) == (board[each[1]-1]) == (board[each[2]-1]):
             return board[each[1]-1]
@@ -37,7 +37,7 @@ def check_win():
         return False
 
 
-def main():
+def main(): # Запуск, база
     counter = 0
     print('\nИтак, чтобы начать играть, вводите номер позиции 1-9, как здесь показано')
     while True:
